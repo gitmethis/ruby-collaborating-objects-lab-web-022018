@@ -39,7 +39,9 @@ class Artist
     @@all
   end
   
-  def 
+    def self.find(name)
+    self.all.find {|artist| artist.name == name }
+  end
   
   def add_song(song)
     @songs << song
